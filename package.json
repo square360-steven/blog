@@ -2,6 +2,7 @@
  "name": "client-theme",
  "client": "My Client",
  "description": "Branding elements for my client",
+ "main": "styles/client-theme.scss",
  "version": "1.0.0",
  "license": "MIT"
 }
