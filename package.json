@@ -1,3 +1,5 @@
 {
- "name": "blog"
+ "name": "blog",
+ "client": "myself",
+ "version": "1.0.0"
 }
