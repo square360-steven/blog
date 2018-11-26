@@ -11,29 +11,24 @@ $font-weight-bold-primary: 700 !global;
 
 $font-family-secondary: "NeueHaasUnicaPro", clean, sans-serif;
 $font-family-regular-secondary: 400 !global;
-$font-family-bold-secondary: 700 !global;
 
 // These font files DO NOT exist in this repo.  See the README.md file inside the fonts folder.
 @font-face {
-	font-family: "NeueHaasUnicaPro";
-	src: url("~client-theme/fonts/neuehaas_2_0.eot");
-	src: url("~client-theme/fonts/neuehaas_2_0.woff2") format("woff2"), url("~client-theme/fonts/neuehaas_2_0.woff") format("woff"), url("~client-theme/fonts/neuehaas_2_0.ttf") format("truetype");
-	font-weight: normal;
-	font-style : normal;
+  font-family: "NeueHaasUnicaPro";
+  src: url("~client-theme/fonts/neuehaas/neuehaas.eot");
+  src: url("~client-theme/fonts/neuehaas/neuehaas.woff2") format("woff2"), url("~client-theme/fonts/neuehaas.neuehaas.woff") format("woff"), url("~client-theme/fonts/neuehaas/neuehaas.ttf") format("truetype");
+  font-weight: normal;
+  font-style : normal;
 };
 
-@font-face {
-	font-family: "NeueHaasUnicaPro";
-	src: url("~client-theme/fonts/neuehaas_3_0.eot");
-	src: url("~client-theme/fonts/neuehaas_3_0.woff2") format("woff2"), url("~client-theme/fonts/neuehaas_3_0.woff") format("woff"), url("~client-theme/fonts/neuehaas_3_0.ttf") format("truetype");
-	font-weight: normal;
-	font-style : italic;
-};
+// Placeholders
+%a {
+  color: $color-brand;
+  text-decoration: none;
 
-@font-face {
-	font-family: "NeueHaasUnicaPro";
-	src: url("~client-theme/fonts/neuehaas_0_0.eot");
-	src: url("~client-theme/fonts/neuehaas_0_0.woff2") format("woff2"), url("~client-theme/fonts/neuehaas_0_0.woff") format("woff"), url("~client-theme/fonts/neuehaas_0_0.ttf") format("truetype");
-	font-weight: bold;
-	font-style : normal;
-};
+  &:focus,
+  &:hover {
+    color: $color-accent;
+    text-decoration: underline;
+  }
+}
